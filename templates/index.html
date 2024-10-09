@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM-Security</title>
+</head>
+<style>
+    * {
+        text-align: center;
+        font-family: Garamond;
+        text-decoration: none;
+    }
+
+    *, html, body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(32, 3, 94);
+        height: 200px;
+        font-family: franklin gothic medium;
+        position: relative;  
+        text-shadow: 2px 2px 5px black;
+    }
+    h1 {
+        position: absolute;
+        left: 42%;
+        top: 42%;
+        font-size: 50px;
+        color: white;
+        
+    }
+    main {
+        padding-top: 100px;
+    }
+    button {
+        margin-top: 15px;
+        width: 200px;
+        height: 40px;
+        background-color: lightgrey;
+        font-weight: bolder;
+    }
+    a {
+        color: black;
+        font-weight: bolder;
+    }
+</style>
+
+<body style="background-color: rgb(255, 255, 255);">
+    <header style="display: block;">
+        <h1>AM-Security</h1>
+    </header>
+    
+    <main style="text-align: center;">
+        <h2>Face Verification</h2>
+        <form action="/capture" method="post">
+        <button type="submit" style="font-family: 'Garamond';">Capture & Verify</button>
+        </form>
+        <br>
+        <a href="/download-csv">Download Entry-Exit log</a>
+    </main>
+</body>
+</html>
